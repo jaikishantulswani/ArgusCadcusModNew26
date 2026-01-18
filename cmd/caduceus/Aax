@@ -57,3 +57,4 @@
 91.199.120.185 CN=cobalto.thunder.es CN=R13,O=Let's Encrypt,C=US cobalto.thunder.es 2025-12-02T03:55:48Z 2026-03-02T03:55:47Z 456113134570686375395763138388126931720651 SHA256-RSA RSA
 91.199.120.187 CN=reciclajesjarama.com CN=R12,O=Let's Encrypt,C=US reciclajesjarama.com,www.reciclajesjarama.com 2026-01-13T04:08:44Z 2026-04-13T04:08:43Z 524911554635243249461443459272785742098285 SHA256-RSA RSA
 91.199.121.197 CN=sslvpn.home.dk,O=HOME A/S,L=Åbyhøj,ST=Aarhus,C=DK CN=GlobalSign RSA OV SSL CA 2018,O=GlobalSign nv-sa,C=BE sslvpn.home.dk,wifi.home.dk 2025-05-20T07:06:11Z 2026-06-21T07:06:10Z 22209067230943757420019092327 SHA256-RSA RSA
+91.199.127.251 CN=*.adgar.com CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O=GoDaddy.com\, Inc.,L=Scottsdale,ST=Arizona,C=US *.adgar.com,adgar.com 2024-06-06T09:09:57Z 2025-04-21T15:13:25Z 6536909565552634471 SHA256-RSA RSA

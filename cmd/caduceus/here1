@@ -16,3 +16,6 @@
 2026-01-18T14:29:18.502Z Current Scan on IP number: 2008/4096
 2026-01-18T14:29:57.891Z Current Scan on IP number: 2510/4096
 2026-01-18T14:30:42.321Z Current Scan on IP number: 3012/4096
+2026-01-18T14:31:24.583Z Current Scan on IP number: 3514/4096
+2026-01-18T14:32:06.336Z Current Scan on IP number: 4016/4096
+2026-01-18T14:32:12.575Z Scan completed. Stats: Total IPs: 4096, Successful: 60, Failures: 555, Timeouts: 3481, Retries: 0, Duration: 5m14s

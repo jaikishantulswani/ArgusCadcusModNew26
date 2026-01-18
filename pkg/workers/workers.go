@@ -114,8 +114,14 @@ func getCertWithExtendedInfo(ip string, dialer *net.Dialer) (*types.CertificateI
 		return nil, err
 	}
 
+	// Strip port from IP so output (JSON and text) is clean
+	displayIP := ip
+	if host, _, err := net.SplitHostPort(ip); err == nil {
+		displayIP = host
+	}
+
 	certInfo := &types.CertificateInfo{
-		OriginIP:           ip,
+		OriginIP:           displayIP,
 		Organization:       cert.Subject.Organization,
 		OrganizationUnit:   cert.Subject.OrganizationalUnit,
 		CommonName:         cert.Subject.CommonName,
@@ -221,11 +227,7 @@ func (rw *ResultsWorker) Run(args types.ScrapeArgs, allowedDomains map[string]bo
 				rw.outputChannel <- string(outputJSON)
 			} else {
 				// User requested format: IP Subject Issuer DNSNames(comma-separated) NotBefore NotAfter SerialNumber SigAlg PubKeyAlg
-				// Strip port from OriginIP for display
 				host := result.Certificate.OriginIP
-				if h, _, err := net.SplitHostPort(host); err == nil {
-					host = h
-				}
 
 				dnsNames := strings.Join(result.Certificate.SAN, ",")
 				output := fmt.Sprintf("%s %s %s %s %s %s %s %s %s",
